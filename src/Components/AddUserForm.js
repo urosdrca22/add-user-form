@@ -4,8 +4,6 @@ import './AddUserForm.css'
 
 const AddUserForm = (props) => {
 
-    
-
     const[enteredName, setEnteredName] = useState('');
     const[enteredAge, setEnteredAge] = useState('');
 
@@ -25,8 +23,8 @@ const AddUserForm = (props) => {
             age: enteredAge
         };
 
+        props.onSaveUserData(userData);
 
-        console.log(userData)
         setEnteredName('');
         setEnteredAge('');
     };
