@@ -8,7 +8,7 @@
     margin-left: auto;
     margin-right: auto;
     border: solid black;
-    background-color: #d16868;
+    background-color: #f0e9e9;
 }
 
 .input, label{
@@ -28,4 +28,7 @@ input{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+}
+.individual-user{
+    color: red;
 }
