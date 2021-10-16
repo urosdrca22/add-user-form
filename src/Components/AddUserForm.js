@@ -23,8 +23,16 @@ const AddUserForm = (props) => {
             age: enteredAge
         };
 
-        props.onSaveUserData(userData);
+        if (enteredName.trim().length === 0 || enteredAge.trim().length === 0) {
+            alert('Please fill out both fields')
+            return;
+        };
+        if (+enteredAge < 1){
+            alert('Age must be a number larger than 0')
+            return;
+        };
 
+        props.onSaveUserData(userData);
         setEnteredName('');
         setEnteredAge('');
     };
